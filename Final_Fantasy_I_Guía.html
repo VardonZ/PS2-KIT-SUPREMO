@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Guía completa paso a paso de Final Fantasy I: recorrido, objetos clave, mazmorras, jefes y consejos. Español e inglés.">
+<title>FINAL FANTASY I — Complete Walkthrough / Guía completa</title>
+<style>
+:root{--bg:#101522;--panel:#192238;--panel2:#202d47;--gold:#f4c96b;--text:#eef3ff;--muted:#b9c6df;--line:#344563;--blue:#6ed8ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+a{color:var(--blue)}.wrap{max-width:1050px;margin:auto;padding:18px}.hero{padding:28px 22px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(135deg,#1b2946,#111725 70%);text-align:center}
+.logo{font-size:clamp(2rem,7vw,4rem);line-height:1.1;color:var(--gold);font-weight:900;letter-spacing:.06em;text-shadow:0 3px #60471c}.subtitle{color:var(--muted);font-size:1.05rem}.hero img{width:100%;max-height:270px;object-fit:cover;border-radius:12px;margin-top:18px;border:1px solid var(--line)}
+.controls{position:sticky;top:0;z-index:5;display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap;background:#101522ed;padding:10px;border-bottom:1px solid var(--line)}
+button,.pill{border:1px solid var(--line);border-radius:999px;padding:9px 15px;background:var(--panel2);color:var(--text);font-weight:700;cursor:pointer}button.active{background:var(--gold);color:#171717;border-color:var(--gold)}.progress{font-size:.9rem;color:var(--muted)}
+h1,h2,h3{line-height:1.25}h2{color:var(--gold);font-size:1.65rem;border-bottom:1px solid var(--line);padding-bottom:8px}h3{color:#9ee5ff;margin-top:1.3rem}.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin:16px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.card{background:var(--panel2);padding:14px;border-radius:10px;border:1px solid var(--line)}.icon{font-size:1.4rem;margin-right:6px}.tag{display:inline-block;background:#344563;padding:2px 9px;border-radius:20px;font-size:.82rem;margin:2px}.toc a{display:block;text-decoration:none;padding:7px 10px;border-radius:8px}.toc a:hover{background:var(--panel2)}ol,ul{padding-left:1.4rem}li{margin:.35rem 0}.checklist label{display:block;padding:5px 0}.checklist input{accent-color:var(--gold);margin-right:8px}.boss{border-left:4px solid #ff7b7b;padding:10px 14px;background:#311f2a;border-radius:0 8px 8px 0}.note{color:var(--muted);font-size:.94rem}.mapimg{width:100%;border-radius:10px;max-height:230px;object-fit:cover}.hidden{display:none!important}footer{text-align:center;color:var(--muted);padding:25px 10px;border-top:1px solid var(--line);margin-top:30px}
+@media(min-width:800px){.columns{columns:2;column-gap:28px}.columns>*{break-inside:avoid}} 
+.mobileShow{display:none}.mobileHide{display:block}@media(max-width:767px){.mobileShow{display:block}.mobileHide{display:none}}
+</style>
+</head>
+<body>
+<center>
+<div class="mobileShow">
+<script>
+  atOptions = {
+    'key' : 'ced4898808754580447f103efb2553d9',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highrevenueformat.com/ced4898808754580447f103efb2553d9/invoke.js"></script>
+</div>
+
+<div class="mobileHide">
+<script>
+  atOptions = {
+    'key' : '889cea5482fa51488c84e5eede0ad346',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highrevenueformat.com/889cea5482fa51488c84e5eede0ad346/invoke.js"></script>
+</div>
+</center>
+
+<div class="controls">
+  <span>🌐 Language / Idioma</span>
+  <button id="esBtn" class="active" type="button" onclick="setLang('es')">Español</button>
+  <button id="enBtn" type="button" onclick="setLang('en')">English</button>
+  <span class="progress" id="readProgress">0% completado</span>
+</div>
+<div class="wrap">
+<header class="hero">
+<div class="logo">FINAL FANTASY I</div>
+<p class="subtitle" data-es="Guía completa · Walkthrough paso a paso · NES / versiones clásicas" data-en="Complete guide · Step-by-step walkthrough · NES / classic versions">Guía completa · Walkthrough paso a paso · NES / versiones clásicas</p>
+<img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1400&q=85" alt="Paisaje de fantasía con montañas y niebla">
+<p data-es="Reúne a los cuatro Warriors of Light, restaura los cuatro Orbs y derrota a Chaos." data-en="Gather the four Warriors of Light, restore the four Orbs, and defeat Chaos.">Reúne a los cuatro Warriors of Light, restaura los cuatro Orbs y derrota a Chaos.</p>
+</header>
+
+<section class="panel">
+<h2 data-es="📜 Índice de la guía" data-en="📜 Guide contents">📜 Índice de la guía</h2>
+<nav class="toc grid">
+<a href="#start" data-es="⚔️ 1. Preparación y equipo" data-en="⚔️ 1. Starting setup">⚔️ 1. Preparación y equipo</a>
+<a href="#cornelia" data-es="🏰 2. Cornelia y Garland" data-en="🏰 2. Cornelia and Garland">🏰 2. Cornelia y Garland</a>
+<a href="#pravoka" data-es="⛵ 3. Pravoka y el barco" data-en="⛵ 3. Pravoka and the ship">⛵ 3. Pravoka y el barco</a>
+<a href="#elfheim" data-es="🌿 4. Elfheim, Marsh Cave y Astos" data-en="🌿 4. Elfheim, Marsh Cave, and Astos">🌿 4. Elfheim, Marsh Cave y Astos</a>
+<a href="#earth" data-es="🪨 5. Melmond y Earth Cave" data-en="🪨 5. Melmond and Earth Cave">🪨 5. Melmond y Earth Cave</a>
+<a href="#fire" data-es="🔥 6. Crescent Lake y Mount Gulg" data-en="🔥 6. Crescent Lake and Mount Gulg">🔥 6. Crescent Lake y Mount Gulg</a>
+<a href="#airship" data-es="🛩️ 7. Ice Cave y Airship" data-en="🛩️ 7. Ice Cave and Airship">🛩️ 7. Ice Cave y Airship</a>
+<a href="#promotion" data-es="🐉 8. Class Change" data-en="🐉 8. Class Change">🐉 8. Class Change</a>
+<a href="#water" data-es="🌊 9. Oxyale y Sunken Shrine" data-en="🌊 9. Oxyale and Sunken Shrine">🌊 9. Oxyale y Sunken Shrine</a>
+<a href="#wind" data-es="🌪️ 10. Lufenia y Flying Fortress" data-en="🌪️ 10. Lufenia and Flying Fortress">🌪️ 10. Lufenia y Flying Fortress</a>
+<a href="#chaos" data-es="👑 11. Temple of Fiends y Chaos" data-en="👑 11. Temple of Fiends and Chaos">👑 11. Temple of Fiends y Chaos</a>
+<a href="#reference" data-es="📚 12. Objetos y consejos" data-en="📚 12. Items and tips">📚 12. Objetos y consejos</a>
+</nav>
+</section>
+
+<section id="start" class="panel">
+<h2 data-es="⚔️ 1. Preparación y equipo" data-en="⚔️ 1. Starting setup">⚔️ 1. Preparación y equipo</h2>
+<p data-es="Al comenzar, elige cuatro clases. Para una partida equilibrada y sencilla, usa Fighter, Black Belt, White Mage y Black Mage. Una composición con dos atacantes físicos, curación y magia ofensiva cubre la mayoría de situaciones." data-en="At the start, choose four classes. For a balanced, straightforward run, use Fighter, Black Belt, White Mage, and Black Mage. Two physical attackers, healing, and offensive magic cover most situations.">Al comenzar, elige cuatro clases. Para una partida equilibrada y sencilla, usa Fighter, Black Belt, White Mage y Black Mage. Una composición con dos atacantes físicos, curación y magia ofensiva cubre la mayoría de situaciones.</p>
+<div class="grid">
+<div class="card"><span class="icon">🛡️</span><b>Fighter</b><p data-es="Gran defensa, armas y armaduras potentes; atacante principal." data-en="Strong defense and equipment; your main front-line attacker.">Gran defensa, armas y armaduras potentes; atacante principal.</p></div>
+<div class="card"><span class="icon">🥋</span><b>Black Belt</b><p data-es="Buen daño físico; puede rendir muy bien sin arma según la versión." data-en="Strong physical damage; can perform very well unarmed depending on version.">Buen daño físico; puede rendir muy bien sin arma según la versión.</p></div>
+<div class="card"><span class="icon">✨</span><b>White Mage</b><p data-es="Curación, protección y magia contra no muertos." data-en="Healing, protection, and magic against undead enemies.">Curación, protección y magia contra no muertos.</p></div>
+<div class="card"><span class="icon">🔥</span><b>Black Mage</b><p data-es="Daño elemental y hechizos para controlar grupos." data-en="Elemental damage and spells to control enemy groups.">Daño elemental y hechizos to control enemy groups.</p></div>
+</div>
+<h3 data-es="Primeros preparativos" data-en="First preparations">Primeros preparativos</h3>
+<ul>
+<li data-es="En Cornelia, compra equipo defensivo para Fighter y armas útiles para los atacantes." data-en="In Cornelia, buy defensive gear for Fighter and useful weapons for your attackers.">En Cornelia, compra equipo defensivo para Fighter y armas útiles para los atacantes.</li>
+<li data-es="Compra magia según tu grupo y conserva Gil para posadas y objetos curativos." data-en="Buy spells that suit your party and save Gil for inns and healing items.">Compra magia según tu grupo y conserva Gil para posadas y objetos curativos.</li>
+<li data-es="Guarda una partida antes de entrar en mazmorras largas; lleva Potion, Antidote y Tent cuando estén disponibles." data-en="Save before long dungeons; carry Potion, Antidote, and Tent when available.">Guarda una partida antes de entrar en mazmorras largas; lleva Potion, Antidote y Tent cuando estén disponibles.</li>
+</ul>
+</section>
+
+<section id="cornelia" class="panel">
+<h2 data-es="🏰 2. Cornelia y Garland" data-en="🏰 2. Cornelia and Garland">🏰 2. Cornelia y Garland</h2>
+<ol>
+<li data-es="Habla con el King of Cornelia. La historia comienza con la misión de rescatar a la Princess Sarah." data-en="Speak to the King of Cornelia. Your first mission is to rescue Princess Sarah.">Habla con el King of Cornelia. La historia comienza con la misión de rescatar a la Princess Sarah.</li>
+<li data-es="Sal por la puerta norte y dirígete al Chaos Shrine, al noroeste de Cornelia." data-en="Leave through the northern gate and travel to Chaos Shrine, northwest of Cornelia.">Sal por la puerta norte y dirígete al Chaos Shrine, al noroeste de Cornelia.</li>
+<li data-es="Explora el santuario para encontrar a Garland. Cura al grupo antes de entrar en combate." data-en="Explore the shrine to find Garland. Heal the party before engaging him.">Explora el santuario para encontrar a Garland. Cura al grupo antes de entrar en combate.</li>
+<li data-es="Derrota a Garland y vuelve a Cornelia. El King construirá un puente al norte." data-en="Defeat Garland and return to Cornelia. The King will build a bridge to the north.">Derrota a Garland y vuelve a Cornelia. El King construirá un puente al norte.</li>
+<li data-es="Cruza el puente y contempla la secuencia inicial del viaje. Después, avanza hacia el este para continuar." data-en="Cross the bridge and watch the journey's opening sequence. Then head east to continue.">Cruza el puente y contempla la secuencia inicial del viaje. Después, avanza hacia el este para continuar.</li>
+</ol>
+<div class="boss"><b>👹 Garland — </b><span data-es="Es un combate directo. Mantén a los personajes heridos curados y usa ataques físicos; con algo de entrenamiento en los alrededores debería caer rápidamente." data-en="A straightforward fight. Keep injured characters healed and use physical attacks; a little training nearby should make this quick.">Es un combate directo. Mantén a los personajes heridos curados y usa ataques físicos; con algo de entrenamiento en los alrededores debería caer rápidamente.</span></div>
+</section>
+
+<section id="pravoka" class="panel">
+<h2 data-es="⛵ 3. Pravoka y el barco" data-en="⛵ 3. Pravoka and the ship">⛵ 3. Pravoka y el barco</h2>
+<ol>
+<li data-es="Sigue hacia el este hasta Pravoka. Descansa y mejora equipo y magia." data-en="Continue east to Pravoka. Rest and upgrade equipment and magic.">Sigue hacia el este hasta Pravoka. Descansa y mejora equipo y magia.</li>
+<li data-es="Habla con los habitantes para conocer el problema de los piratas. Busca a Bikke en la zona portuaria." data-en="Talk to the townspeople to learn about the pirates. Find Bikke near the harbor.">Habla con los habitantes para conocer el problema de los piratas. Busca a Bikke en la zona portuaria.</li>
+<li data-es="Enfréntate a Bikke y a los Pirates. Los ataques físicos suelen bastar; usa magia de grupo si el combate se complica." data-en="Fight Bikke and the Pirates. Physical attacks usually suffice; use group magic if the battle gets rough.">Enfréntate a Bikke y a los Pirates. Los ataques físicos suelen bastar; usa magia de grupo si el combate se complica.</li>
+<li data-es="Tras vencer, Bikke te entregará el Ship. Navega hacia el oeste hasta Elfheim; desembarca en una costa accesible y termina a pie." data-en="After winning, Bikke gives you the Ship. Sail west toward Elfheim; dock on an accessible coast and continue on foot.">Tras vencer, Bikke te entregará el Ship. Navega hacia el oeste hasta Elfheim; desembarca en una costa accesible y termina a pie.</li>
+</ol>
+<p class="note" data-es="Consejo de navegación: el Ship solo puede desembarcar en determinados puntos de costa. Si no puedes bajar, rodea la costa hasta encontrar una playa o puerto." data-en="Sailing tip: the Ship can dock only at certain shoreline tiles. If you cannot disembark, follow the coast until you find a beach or harbor.">Consejo de navegación: el Ship solo puede desembarcar en determinados puntos de costa. Si no puedes bajar, rodea la costa hasta encontrar una playa o puerto.</p>
+</section>
+
+<section id="elfheim" class="panel">
+<h2 data-es="🌿 4. Elfheim, Marsh Cave y Astos" data-en="🌿 4. Elfheim, Marsh Cave, and Astos">🌿 4. Elfheim, Marsh Cave y Astos</h2>
+<ol>
+<li data-es="En Elfheim, compra equipo y magia disponible. Habla con la gente para descubrir que el Elf Prince está bajo un hechizo." data-en="In Elfheim, buy available gear and spells. Learn that the Elf Prince has been placed under a spell.">En Elfheim, compra equipo y magia disponible. Habla con la gente para descubrir que el Elf Prince está bajo un hechizo.</li>
+<li data-es="Ve al Western Keep y habla con el rey. La búsqueda de la Crown te conduce a Marsh Cave, al sur de Elfheim." data-en="Visit Western Keep and speak with the king. The Crown quest leads to Marsh Cave, south of Elfheim.">Ve al Western Keep y habla con el rey. La búsqueda de la Crown te conduce a Marsh Cave, al sur de Elfheim.</li>
+<li data-es="Explora Marsh Cave y desciende hasta B3. Busca los cofres de la sala del sur; recoge la Crown y sal. La mazmorra puede ser peligrosa: entra con HP y objetos al máximo." data-en="Explore Marsh Cave and descend to B3. Search the southern rooms for chests; collect the Crown and leave. This dungeon is dangerous: enter with full HP and supplies.">Explora Marsh Cave y desciende hasta B3. Busca los cofres de la sala del sur; recoge la Crown y sal. La mazmorra puede ser peligrosa: entra con HP y objetos al máximo.</li>
+<li data-es="Lleva la Crown al Western Keep. El supuesto rey es Astos: derrótalo para obtener el Crystal Eye." data-en="Take the Crown to Western Keep. The supposed king is Astos: defeat him to obtain the Crystal Eye.">Lleva la Crown al Western Keep. El supuesto rey es Astos: derrótalo para obtener el Crystal Eye.</li>
+<li data-es="Ve a Matoya’s Cave, al norte de Cornelia, y entrega el Crystal Eye a Matoya. Recibirás el Jolt Tonic." data-en="Go to Matoya’s Cave, north of Cornelia, and give the Crystal Eye to Matoya. You receive the Jolt Tonic.">Ve a Matoya’s Cave, al norte de Cornelia, y entrega el Crystal Eye a Matoya. Recibirás el Jolt Tonic.</li>
+<li data-es="Vuelve a Elfheim y entrega el Jolt Tonic al asistente del Elf Prince. El príncipe despierta y te da la Mystic Key." data-en="Return to Elfheim and give the Jolt Tonic to the Elf Prince’s attendant. The prince awakens and gives you the Mystic Key.">Vuelve a Elfheim y entrega el Jolt Tonic al asistente del Elf Prince. El príncipe despierta y te da la Mystic Key.</li>
+</ol>
+<div class="boss"><b>👑 Astos — </b><span data-es="Puede lanzar magia peligrosa, incluido Death en algunas versiones. Prioriza el daño rápido y mantén curación disponible; evita prolongar el combate." data-en="He can cast dangerous magic, including Death in some versions. Focus on fast damage and keep healing ready; avoid a prolonged fight.">Puede lanzar magia peligrosa, incluido Death en algunas versiones. Prioriza el daño rápido y mantén curación disponible; evita prolongar el combate.</span></div>
+<h3 data-es="Cofres cerrados con Mystic Key" data-en="Locked chests with the Mystic Key">Cofres cerrados con Mystic Key</h3>
+<p data-es="Regresa a Cornelia Castle, Elven Castle, Western Keep y Chaos Shrine para abrir salas antes inaccesibles. No olvides recoger TNT en Cornelia Castle: lo necesitarás en Mount Duergar." data-en="Return to Cornelia Castle, Elven Castle, Western Keep, and Chaos Shrine to open previously locked rooms. Do not miss the TNT in Cornelia Castle: you need it at Mount Duergar.">Regresa a Cornelia Castle, Elven Castle, Western Keep y Chaos Shrine para abrir salas antes inaccesibles. No olvides recoger TNT en Cornelia Castle: lo necesitarás en Mount Duergar.</p>
+</section>
+
+<section id="earth" class="panel">
+<h2 data-es="🪨 5. Mount Duergar, Melmond y Earth Cave" data-en="🪨 5. Mount Duergar, Melmond, and Earth Cave">🪨 5. Mount Duergar, Melmond y Earth Cave</h2>
+<ol>
+<li data-es="Navega a Mount Duergar. Entrega el TNT a Nerrick; abrirá un canal que conecta con el mar occidental." data-en="Sail to Mount Duergar. Give the TNT to Nerrick; he opens a canal to the western sea.">Navega a Mount Duergar. Entrega el TNT a Nerrick; abrirá un canal que conecta con el mar occidental.</li>
+<li data-es="Navega al oeste y desembarca cerca de Melmond. Compra equipo y magia de nivel superior." data-en="Sail west and dock near Melmond. Buy stronger equipment and higher-level magic.">Navega al oeste y desembarca cerca de Melmond. Compra equipo y magia de nivel superior.</li>
+<li data-es="Desde Melmond, viaja hacia el suroeste hasta Earth Cave. Entra y busca el camino a los niveles inferiores." data-en="From Melmond, travel southwest to Earth Cave. Enter and find the route to the lower floors.">Desde Melmond, viaja hacia el suroeste hasta Earth Cave. Entra y busca el camino a los niveles inferiores.</li>
+<li data-es="En B2-B3, explora los cofres que encuentres y continúa hasta B3 para derrotar al Vampire. Recoge el Star Ruby que custodia." data-en="On B2-B3, explore the chests and continue to B3 to defeat the Vampire. Take the Star Ruby it guards.">En B2-B3, explora los cofres que encuentres y continúa hasta B3 para derrotar al Vampire. Recoge el Star Ruby que custodia.</li>
+<li data-es="Ve a Titan’s Tunnel y entrega el Star Ruby al Titan para que te deje pasar. Sigue hasta la cueva de Sarda y consigue el Earth Rod." data-en="Go to Titan’s Tunnel and give the Star Ruby to the Titan to pass. Continue to Sarda’s Cave and obtain the Earth Rod.">Ve a Titan’s Tunnel y entrega el Star Ruby al Titan para que te deje pasar. Sigue hasta la cueva de Sarda y consigue el Earth Rod.</li>
+<li data-es="Regresa a Earth Cave y usa el Earth Rod en el punto bloqueado. Desciende hasta el fondo y derrota a Lich para restaurar el Earth Orb." data-en="Return to Earth Cave and use the Earth Rod at the blocked point. Descend to the bottom and defeat Lich to restore the Earth Orb.">Regresa a Earth Cave y usa el Earth Rod en el punto bloqueado. Desciende hasta el fondo y derrota a Lich para restaurar el Earth Orb.</li>
+</ol>
+<div class="boss"><b>💀 Vampire / Lich — </b><span data-es="Usa magia de curación y protección contra estados alterados. Lich es no muerto: la magia curativa y los efectos eficaces contra undead pueden ayudar; conserva cargas de hechizos para el jefe." data-en="Use healing and status protection. Lich is undead: healing magic and effects effective against undead can help; save spell charges for the boss.">Usa magia de curación y protección contra estados alterados. Lich es no muerto: la magia curativa y los efectos eficaces contra undead pueden ayudar; conserva cargas de hechizos para el jefe.</span></div>
+</section>
+
+<section id="fire" class="panel">
+<h2 data-es="🔥 6. Crescent Lake y Mount Gulg" data-en="🔥 6. Crescent Lake and Mount Gulg">🔥 6. Crescent Lake y Mount Gulg</h2>
+<ol>
+<li data-es="Viaja a Crescent Lake, en la región sureste. Habla con los sages al este del pueblo para recibir el Canoe." data-en="Travel to Crescent Lake in the southeast. Speak to the sages east of town to receive the Canoe.">Viaja a Crescent Lake, en la región sureste. Habla con los sages al este del pueblo para recibir el Canoe.</li>
+<li data-es="Usa el Canoe para remontar los ríos de lava hacia Mount Gulg (Gurgu Volcano en algunas versiones)." data-en="Use the Canoe to travel up the lava rivers toward Mount Gulg (called Gurgu Volcano in some versions).">Usa el Canoe para remontar los ríos de lava hacia Mount Gulg (Gurgu Volcano en algunas versiones).</li>
+<li data-es="Explora los pisos y recoge tesoros si tienes recursos suficientes. Los suelos de lava pueden causar daño en versiones clásicas; planifica la ruta y cura con frecuencia." data-en="Explore the floors and collect treasure if you have enough supplies. Lava floors may cause damage in classic versions; plan your route and heal often.">Explora los pisos y recoge tesoros si tienes recursos suficientes. Los suelos de lava pueden causar daño en versiones clásicas; planifica la ruta y cura con frecuencia.</li>
+<li data-es="Llega al nivel inferior y derrota a Marilith (Kary en algunas versiones) para restaurar el Fire Orb." data-en="Reach the lowest level and defeat Marilith (called Kary in some versions) to restore the Fire Orb.">Llega al nivel inferior y derrota a Marilith (Kary en algunas versiones) para restaurar el Fire Orb.</li>
+</ol>
+<div class="boss"><b>🔥 Marilith — </b><span data-es="Refuerza la defensa física y usa el mejor daño constante disponible. Cura antes de que varios personajes queden en peligro; lleva objetos de recuperación." data-en="Strengthen physical defense and use your best reliable damage. Heal before several characters are in danger; bring recovery items.">Refuerza la defensa física y usa el mejor daño constante disponible. Cura antes de que varios personajes queden en peligro; lleva objetos de recuperación.</span></div>
+</section>
+
+<section id="airship" class="panel">
+<h2 data-es="🛩️ 7. Ice Cave y Airship" data-en="🛩️ 7. Ice Cave and Airship">🛩️ 7. Ice Cave y Airship</h2>
+<ol>
+<li data-es="Desde Crescent Lake, navega y usa el Canoe para llegar a la región de Ice Cave, al norte de Mount Gulg." data-en="From Crescent Lake, sail and use the Canoe to reach the Ice Cave region, north of Mount Gulg.">Desde Crescent Lake, navega y usa el Canoe para llegar a la región de Ice Cave, al norte de Mount Gulg.</li>
+<li data-es="Desciende por Ice Cave. Algunos caminos llevan a agujeros que te hacen caer a pisos inferiores; prepara una ruta de salida y recoge el Levistone (Floater en versiones antiguas)." data-en="Descend through Ice Cave. Some routes lead to holes that drop you to lower floors; plan an exit route and collect the Levistone (Floater in older versions).">Desciende por Ice Cave. Algunos caminos llevan a agujeros que te hacen caer a pisos inferiores; prepara una ruta de salida y recoge el Levistone (Floater en versiones antiguas).</li>
+<li data-es="Sal de la cueva y ve al desierto al sur de Crescent Lake. Usa el Levistone para hacer aparecer el Airship." data-en="Leave the cave and travel to the desert south of Crescent Lake. Use the Levistone to raise the Airship.">Sal de la cueva y ve al desierto al sur de Crescent Lake. Usa el Levistone para hacer aparecer el Airship.</li>
+<li data-es="Con el Airship podrás cruzar el mundo con rapidez, pero solo aterriza en terreno llano. Úsalo para visitar Gaia y preparar las siguientes etapas." data-en="The Airship lets you cross the world quickly, but it lands only on flat terrain. Use it to visit Gaia and prepare for the next stages.">Con el Airship podrás cruzar el mundo con rapidez, pero solo aterriza en terreno llano. Úsalo para visitar Gaia y preparar las siguientes etapas.</li>
+</ol>
+</section>
+
+<section id="promotion" class="panel">
+<h2 data-es="🐉 8. Citadel of Trials y Class Change" data-en="🐉 8. Citadel of Trials and Class Change">🐉 8. Citadel of Trials y Class Change</h2>
+<ol>
+<li data-es="Vuela al continente noreste y aterriza cerca de Citadel of Trials; continúa a pie." data-en="Fly to the northeastern continent and land near Citadel of Trials; continue on foot.">Vuela al continente noreste y aterriza cerca de Citadel of Trials; continúa a pie.</li>
+<li data-es="Entra y siéntate en el trono para acceder a la prueba. Los paneles de teletransporte forman un laberinto; explora las rutas y prioriza los cofres si puedes." data-en="Enter and sit on the throne to begin the trial. Teleport panels form a maze; explore the routes and prioritize treasure if possible.">Entra y siéntate en el trono para acceder a la prueba. Los paneles de teletransporte forman un laberinto; explora las rutas y prioriza los cofres si puedes.</li>
+<li data-es="Llega al final, derrota a los Dragon Zombies y recoge el Rat’s Tail." data-en="Reach the end, defeat the Dragon Zombies, and collect the Rat’s Tail.">Llega al final, derrota a los Dragon Zombies y recoge el Rat’s Tail.</li>
+<li data-es="Vuela a las islas de Cardia y encuentra a Bahamut. Entrégale el Rat’s Tail para promover las clases." data-en="Fly to the Cardia islands and find Bahamut. Give him the Rat’s Tail to promote your classes.">Vuela a las islas de Cardia y encuentra a Bahamut. Entrégale el Rat’s Tail para promover las clases.</li>
+</ol>
+<div class="grid">
+<div class="card"><b>Fighter → Knight</b><p data-es="Accede a mejor equipo y a parte de la White Magic." data-en="Gains stronger equipment and access to some White Magic.">Accede a mejor equipo y a parte de la White Magic.</p></div>
+<div class="card"><b>Thief → Ninja</b><p data-es="Mejora el combate y puede usar parte de la Black Magic." data-en="Improves combat and can use some Black Magic.">Mejora el combate y puede usar parte de la Black Magic.</p></div>
+<div class="card"><b>Black Belt → Master</b><p data-es="Potencia el daño físico, especialmente sin arma en ciertas versiones." data-en="Boosts physical damage, especially unarmed in certain versions.">Potencia el daño físico, especialmente sin arma en ciertas versiones.</p></div>
+<div class="card"><b>Mages → Wizards</b><p data-es="Mejoran estadísticas y desbloquean hechizos adicionales." data-en="Gain improved stats and unlock additional spells.">Mejoran estadísticas y desbloquean hechizos adicionales.</p></div>
+</div>
+</section>
+
+<section id="water" class="panel">
+<h2 data-es="🌊 9. Bottled Faerie, Oxyale y Sunken Shrine" data-en="🌊 9. Bottled Faerie, Oxyale, and Sunken Shrine">🌊 9. Bottled Faerie, Oxyale y Sunken Shrine</h2>
+<ol>
+<li data-es="Visita la Caravan del desierto occidental y compra la Bottled Faerie." data-en="Visit the Caravan in the western desert and buy the Bottled Faerie.">Visita la Caravan del desierto occidental y compra la Bottled Faerie.</li>
+<li data-es="Lleva la Bottled Faerie a Gaia. La faerie te entregará Oxyale, necesaria para respirar bajo el agua." data-en="Take the Bottled Faerie to Gaia. The faerie gives you Oxyale, needed to breathe underwater.">Lleva la Bottled Faerie a Gaia. La faerie te entregará Oxyale, necesaria para respirar bajo el agua.</li>
+<li data-es="Ve a Onrac y usa el Submarine para acceder a Sunken Shrine." data-en="Go to Onrac and use the Submarine to access Sunken Shrine.">Ve a Onrac y usa el Submarine para acceder a Sunken Shrine.</li>
+<li data-es="Explora el santuario submarino. Busca el Rosetta Stone en los pisos superiores y desciende hasta el área de Kraken." data-en="Explore the underwater shrine. Find the Rosetta Stone on the upper floors and descend to Kraken’s area.">Explora el santuario submarino. Busca el Rosetta Stone en los pisos superiores y desciende hasta el área de Kraken.</li>
+<li data-es="Derrota a Kraken para restaurar el Water Orb." data-en="Defeat Kraken to restore the Water Orb.">Derrota a Kraken para restaurar el Water Orb.</li>
+<li data-es="Después, navega con el Canoe por el río al oeste de Onrac hasta Waterfall Cavern. Consigue el Warp Cube del Robot." data-en="Afterward, use the Canoe on the river west of Onrac to reach Waterfall Cavern. Obtain the Warp Cube from the Robot.">Después, navega con el Canoe por el río al oeste de Onrac hasta Waterfall Cavern. Consigue el Warp Cube del Robot.</li>
+</ol>
+<div class="boss"><b>🌊 Kraken — </b><span data-es="Protege al grupo contra ataques físicos y mantén la curación constante. Usa los mejores hechizos de daño disponibles y elimina pronto a cualquier personaje debilitado." data-en="Protect the party against physical attacks and heal consistently. Use your strongest available damage spells and quickly rescue any weakened character.">Protege al grupo contra ataques físicos y mantén la curación constante. Usa los mejores hechizos de daño disponibles y elimina pronto a cualquier personaje debilitado.</span></div>
+</section>
+
+<section id="wind" class="panel">
+<h2 data-es="🌪️ 10. Rosetta Stone, Lufenia y Flying Fortress" data-en="🌪️ 10. Rosetta Stone, Lufenia, and Flying Fortress">🌪️ 10. Rosetta Stone, Lufenia y Flying Fortress</h2>
+<ol>
+<li data-es="Regresa a Melmond y entrega el Rosetta Stone a Unne. Así aprenderás el idioma de los Lufenian." data-en="Return to Melmond and give the Rosetta Stone to Unne. This teaches you the Lufenian language.">Regresa a Melmond y entrega el Rosetta Stone a Unne. Así aprenderás el idioma de los Lufenian.</li>
+<li data-es="Vuela a Lufenia, en el continente noreste. Habla con los habitantes y consigue el Chime." data-en="Fly to Lufenia on the northeastern continent. Speak with the residents and obtain the Chime.">Vuela a Lufenia, en el continente noreste. Habla con los habitantes y consigue el Chime.</li>
+<li data-es="Aterriza cerca del desierto del noreste y entra en Mirage Tower. El Chime permite acceder a la torre." data-en="Land near the northeastern desert and enter Mirage Tower. The Chime allows access to the tower.">Aterriza cerca del desierto del noreste y entra en Mirage Tower. El Chime permite acceder a la torre.</li>
+<li data-es="Sube por Mirage Tower y usa el Warp Cube para llegar a Flying Fortress." data-en="Climb Mirage Tower and use the Warp Cube to reach Flying Fortress.">Sube por Mirage Tower y usa el Warp Cube para llegar a Flying Fortress.</li>
+<li data-es="Explora Flying Fortress y recoge Adamantite en el segundo piso. Continúa hasta el quinto piso para enfrentarte a Tiamat." data-en="Explore Flying Fortress and collect Adamantite on the second floor. Continue to the fifth floor to face Tiamat.">Explora Flying Fortress y recoge Adamantite en el segundo piso. Continúa hasta el quinto piso para enfrentarte a Tiamat.</li>
+<li data-es="Derrota a Tiamat para restaurar el Wind Orb. Lleva Adamantite a Smyth, en Mount Duergar, para recibir la espada Excalibur." data-en="Defeat Tiamat to restore the Wind Orb. Take Adamantite to Smyth in Mount Duergar to receive the Excalibur sword.">Derrota a Tiamat para restaurar el Wind Orb. Lleva Adamantite a Smyth, en Mount Duergar, para recibir la espada Excalibur.</li>
+</ol>
+<div class="boss"><b>🐲 Tiamat — </b><span data-es="Lleva el equipo más resistente, cura antes de que el grupo se debilite y alterna ataques físicos potentes con magia. La preparación importa más que una táctica única." data-en="Bring your most durable gear, heal before the party collapses, and combine strong physical attacks with magic. Preparation matters more than any single tactic.">Lleva el equipo más resistente, cura antes de que el grupo se debilite y alterna ataques físicos potentes con magia. La preparación importa más que una táctica única.</span></div>
+</section>
+
+<section id="chaos" class="panel">
+<h2 data-es="👑 11. Temple of Fiends y Chaos" data-en="👑 11. Temple of Fiends and Chaos">👑 11. Temple of Fiends y Chaos</h2>
+<ol>
+<li data-es="Antes del final, compra la mejor armadura, armas, objetos curativos y magia que puedas permitirte. Descansa y guarda la partida." data-en="Before the finale, buy the best armor, weapons, healing items, and magic you can afford. Rest and save.">Antes del final, compra la mejor armadura, armas, objetos curativos y magia que puedas permitirte. Descansa y guarda la partida.</li>
+<li data-es="Vuelve a Chaos Shrine con la Lute obtenida durante la aventura. Interactúa con la piedra negra para viajar 2.000 años al pasado y acceder a Temple of Fiends revisited." data-en="Return to Chaos Shrine with the Lute obtained during the adventure. Interact with the black orb to travel 2,000 years into the past and enter the Temple of Fiends revisited.">Vuelve a Chaos Shrine con la Lute obtenida durante la aventura. Interactúa con la piedra negra para viajar 2.000 años al pasado y acceder a Temple of Fiends revisited.</li>
+<li data-es="Avanza por la mazmorra y derrota de nuevo a los cuatro Fiends: Lich, Marilith, Kraken y Tiamat. El orden y la dificultad dependen de la versión; gestiona los recursos entre combates." data-en="Proceed through the dungeon and defeat the four Fiends again: Lich, Marilith, Kraken, and Tiamat. Order and difficulty vary by version; manage resources between fights.">Avanza por la mazmorra y derrota de nuevo a los cuatro Fiends: Lich, Marilith, Kraken y Tiamat. El orden y la dificultad dependen de la versión; gestiona los recursos entre combates.</li>
+<li data-es="Alcanza la cámara final y lucha contra Chaos. Mantén la curación, usa mejoras ofensivas cuando sean útiles y reserva recursos para la fase final." data-en="Reach the final chamber and fight Chaos. Keep healing, use offensive buffs when useful, and save resources for the final phase.">Alcanza la cámara final y lucha contra Chaos. Mantén la curación, usa mejoras ofensivas cuando sean útiles y reserva recursos para la fase final.</li>
+<li data-es="Derrota a Chaos para completar la aventura y devolver la paz al mundo." data-en="Defeat Chaos to complete the adventure and restore peace to the world.">Derrota a Chaos para completar la aventura y devolver la paz al mundo.</li>
+</ol>
+<div class="boss"><b>👑 Chaos — </b><span data-es="Es una batalla de resistencia. Entra con todos los personajes vivos, HP y recursos altos. Prioriza mantener vivo al grupo, aprovecha los hechizos de mejora y cura de inmediato el daño grave." data-en="This is an endurance fight. Enter with every character alive and high HP and resources. Keep the party alive, use buffs when available, and immediately recover from heavy damage.">Es una batalla de resistencia. Entra con todos los personajes vivos, HP y recursos altos. Prioriza mantener vivo al grupo, aprovecha los hechizos de mejora y cura de inmediato el daño grave.</span></div>
+</section>
+
+<section id="reference" class="panel">
+<h2 data-es="📚 12. Objetos clave y consejos" data-en="📚 12. Key items and tips">📚 12. Objetos clave y consejos</h2>
+<div class="grid">
+<div class="card"><b>🔑 Mystic Key</b><p data-es="Abre puertas y cofres cerrados en varias localizaciones. Consíguela al despertar al Elf Prince." data-en="Opens locked doors and chests in several locations. Obtain it by awakening the Elf Prince.">Abre puertas y cofres cerrados en varias localizaciones. Consíguela al despertar al Elf Prince.</p></div>
+<div class="card"><b>💣 TNT</b><p data-es="Entrégalo a Nerrick en Mount Duergar para abrir el canal." data-en="Give it to Nerrick at Mount Duergar to open the canal.">Entrégalo a Nerrick en Mount Duergar para abrir el canal.</p></div>
+<div class="card"><b>💎 Star Ruby</b><p data-es="Se obtiene tras vencer al Vampire y permite pasar junto al Titan." data-en="Obtained after defeating the Vampire; lets you pass the Titan.">Se obtiene tras vencer al Vampire y permite pasar junto al Titan.</p></div>
+<div class="card"><b>🪄 Earth Rod</b><p data-es="Lo entrega Sarda y permite abrir el camino profundo de Earth Cave." data-en="Sarda gives it to you; it opens the deeper route in Earth Cave.">Lo entrega Sarda y permite abrir el camino profundo de Earth Cave.</p></div>
+<div class="card"><b>🪨 Levistone / Floater</b><p data-es="Permite obtener el Airship en el desierto al sur de Crescent Lake." data-en="Lets you obtain the Airship in the desert south of Crescent Lake.">Permite obtener el Airship en el desierto al sur de Crescent Lake.</p></div>
+<div class="card"><b>🧚 Bottled Faerie → Oxyale</b><p data-es="Compra la botella en Caravan y libera a la faerie en Gaia para obtener Oxyale." data-en="Buy the bottle at Caravan and release the faerie in Gaia to obtain Oxyale.">Compra la botella en Caravan y libera a la faerie en Gaia para obtener Oxyale.</p></div>
+<div class="card"><b>📜 Rosetta Stone</b><p data-es="Se encuentra en Sunken Shrine; Unne en Melmond la usa para enseñar Lufenian." data-en="Found in Sunken Shrine; Unne in Melmond uses it to teach Lufenian.">Se encuentra en Sunken Shrine; Unne en Melmond la usa para enseñar Lufenian.</p></div>
+<div class="card"><b>🔔 Chime / Warp Cube</b><p data-es="El Chime abre Mirage Tower; el Warp Cube conecta con Flying Fortress." data-en="The Chime opens Mirage Tower; the Warp Cube connects to Flying Fortress.">El Chime abre Mirage Tower; el Warp Cube conecta con Flying Fortress.</p></div>
+</div>
+<h3 data-es="Lista de progreso" data-en="Progress checklist">Lista de progreso</h3>
+<div class="panel checklist" id="checklist">
+<label><input type="checkbox"> <span data-es="Garland derrotado y puente de Cornelia construido" data-en="Garland defeated and Cornelia bridge built">Garland derrotado y puente de Cornelia construido</span></label>
+<label><input type="checkbox"> <span data-es="Ship conseguido en Pravoka" data-en="Ship obtained in Pravoka">Ship conseguido en Pravoka</span></label>
+<label><input type="checkbox"> <span data-es="Mystic Key conseguida; TNT entregado a Nerrick" data-en="Mystic Key obtained; TNT given to Nerrick">Mystic Key conseguida; TNT entregado a Nerrick</span></label>
+<label><input type="checkbox"> <span data-es="Earth Orb restaurado tras vencer a Lich" data-en="Earth Orb restored after defeating Lich">Earth Orb restaurado tras vencer a Lich</span></label>
+<label><input type="checkbox"> <span data-es="Fire Orb restaurado tras vencer a Marilith" data-en="Fire Orb restored after defeating Marilith">Fire Orb restaurado tras vencer a Marilith</span></label>
+<label><input type="checkbox"> <span data-es="Airship obtenido y clases promovidas por Bahamut" data-en="Airship obtained and classes promoted by Bahamut">Airship obtenido y clases promovidas por Bahamut</span></label>
+<label><input type="checkbox"> <span data-es="Oxyale conseguido y Water Orb restaurado" data-en="Oxyale obtained and Water Orb restored">Oxyale conseguido y Water Orb restaurado</span></label>
+<label><input type="checkbox"> <span data-es="Warp Cube, Chime y Adamantite conseguidos" data-en="Warp Cube, Chime, and Adamantite obtained">Warp Cube, Chime y Adamantite conseguidos</span></label>
+<label><input type="checkbox"> <span data-es="Wind Orb restaurado y Excalibur recogida" data-en="Wind Orb restored and Excalibur collected">Wind Orb restaurado y Excalibur recogida</span></label>
+<label><input type="checkbox"> <span data-es="Chaos derrotado" data-en="Chaos defeated">Chaos derrotado</span></label>
+</div>
+<h3 data-es="Consejos generales" data-en="General tips">Consejos generales</h3>
+<ul>
+<li data-es="Descansa antes de entrar en una mazmorra y evita continuar con pocos HP o cargas de magia." data-en="Rest before entering a dungeon and avoid pushing on with low HP or spell charges.">Descansa antes de entrar en una mazmorra y evita continuar con pocos HP o cargas de magia.</li>
+<li data-es="Compra magia útil en cuanto esté disponible, especialmente curación, protección y ataques elementales." data-en="Buy useful magic as it becomes available, especially healing, protection, and elemental attacks.">Compra magia útil en cuanto esté disponible, especialmente curación, protección y ataques elementales.</li>
+<li data-es="Los nombres y algunos detalles cambian entre NES, versiones de WonderSwan/PSP, Origins y Pixel Remaster. Sigue los nombres de objetos mostrados en tu versión si difieren." data-en="Names and some details vary among NES, WonderSwan/PSP, Origins, and Pixel Remaster. Follow the item names shown in your version if they differ.">Los nombres y algunos detalles cambian entre NES, versiones de WonderSwan/PSP, Origins y Pixel Remaster. Sigue los nombres de objetos mostrados en tu versión si difieren.</li>
+<li data-es="Si te pierdes, revisa los diálogos de NPC: muchos avances dependen de hablar con una persona concreta después de obtener un objeto clave." data-en="If you get stuck, revisit NPC dialogue: many progression steps require speaking to a specific person after obtaining a key item.">Si te pierdes, revisa los diálogos de NPC: muchos avances dependen de hablar con una persona concreta después de obtener un objeto clave.</li>
+</ul>
+</section>
+<footer>
+<p><b>FINAL FANTASY I · WALKTHROUGH</b></p>
+<p data-es="Guía interactiva bilingüe para lectura en móvil y escritorio." data-en="Interactive bilingual guide for mobile and desktop reading.">Guía interactiva bilingüe para lectura en móvil y escritorio.</p>
+</footer>
+</div>
+<script>
+(function(){
+let lang='es';
+window.setLang=function(next){
+ lang=next;
+ document.documentElement.lang=lang;
+ document.querySelectorAll('[data-es][data-en]').forEach(function(el){el.textContent=el.getAttribute('data-'+lang);});
+ document.getElementById('esBtn').classList.toggle('active',lang==='es');
+ document.getElementById('enBtn').classList.toggle('active',lang==='en');
+ updateProgress();
+};
+function updateProgress(){
+ const boxes=[...document.querySelectorAll('#checklist input[type=checkbox]')];
+ const done=boxes.filter(x=>x.checked).length;
+ const pct=Math.round(done/boxes.length*100);
+ document.getElementById('readProgress').textContent=lang==='es'?pct+'% completado':pct+'% complete';
+}
+document.querySelectorAll('#checklist input').forEach(x=>x.addEventListener('change',updateProgress));
+window.addEventListener('scroll',function(){
+ const doc=document.documentElement;
+ const max=doc.scrollHeight-doc.clientHeight;
+ const pct=max>0?Math.round(doc.scrollTop/max*100):0;
+ document.getElementById('readProgress').textContent=lang==='es'?pct+'% leído':pct+'% read';
+},{passive:true});
+})();
+</script>
+</body>
+</html>
